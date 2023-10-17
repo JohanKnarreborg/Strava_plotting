@@ -68,10 +68,12 @@ class Strava_plotting:
         size = int(math.sqrt(size))+1
 
         # width * height should equal or be greater than the amount of files. You can fiddle around with these 
+        
         if width == '' or height == '':
             width = size -1 
             height = size +1
         else:
+            assert width*height >= size*size, Fore.RED + "width * height should equal or be greater than the amount of files. You can fiddle around with these" + Style.RESET_ALL
             width = width
             height = height
         fig.set_size_inches(width,height)
