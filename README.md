@@ -17,7 +17,7 @@ This notebook takes your Strava bulk download and plots all of your activites. T
 
 For Activity plot: 
 
-4. Play around with matrix dimension (width /height var) 
+4. Play around with matrix dimension (width/height) 
 
 For Area plot 
 
