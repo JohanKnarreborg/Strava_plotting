@@ -17,9 +17,15 @@ This notebook takes your Strava bulk download and plots all of your activites. T
 
 For Activity plot: 
 
-4. Play around with matrix dimension (width /height var) 
+4. Play around with matrix dimension (width/height) 
 
 For Area plot 
 
 4. Change plot center coordinates 
-5. Change area radius 
+5. Change area radius
+
+<div align="center">
+  <img width="600" src="https://github.com/JohanKnarreborg/Strava_plotting/blob/main/copenhagen.jpeg">
+  <br>
+  <em>All my activities around Copenhagen 🏃‍♂️</em>
+</div>
