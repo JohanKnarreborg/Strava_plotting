@@ -126,7 +126,7 @@ class Strava_plotting:
             plt.savefig(DIR_STRAVA+"/pig_matrix.png",format = "png",dpi = 500,bbox_inches = 'tight')
         plt.show()
     
-    def plot_area(self,plot_center =[55.66597639, 12.54277727] ,plot_width_km = 14,save = False): 
+    def plot_area(self,plot_center =[55.66597639, 12.54277727] ,plot_width_km = 14,title = "Copenhagen",save = False): 
         DIR_STRAVA = self.DIR_STRAVA
         #no change needed
         xmax = plot_center[1]+plot_width_km*math.cos(plot_center[0])/111.320 
@@ -163,7 +163,7 @@ class Strava_plotting:
             plt.axis('scaled')
 
         font = {'fontname':'serif'}
-        plt.title('Copenhagen',fontsize = 50,x = 0.5 ,y =0.94,color =color,**font)
+        plt.title(title,fontsize = 50,x = 0.5 ,y =0.94,color =color,**font)
         plt.xlim([-plot_width_km*math.cos(plot_center[0])/111.320 ,plot_width_km*math.cos(plot_center[0])/111.320 ])
         plt.ylim([ymin,ymax])
         if save == True:
