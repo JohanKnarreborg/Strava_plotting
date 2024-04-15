@@ -1,0 +1,7 @@
+pandas
+numpy
+matplotlib 
+gpx_converter
+seaborn
+fit2gpx
+colorama

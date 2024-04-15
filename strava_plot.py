@@ -7,6 +7,8 @@ import numpy as np
 import math as math
 from fit2gpx import StravaConverter
 from colorama import Fore, Style
+
+
 class Strava_plotting:
 
     def __init__(self, DIR_STRAVA):
@@ -20,10 +22,8 @@ class Strava_plotting:
         )
         #Unzip the zipped files
         strava_conv.unzip_activities()
-
         #Add metadata to existing GPX files
-        strava_conv.add_metadata_to_gpx()
-
+        #strava_conv.add_metadata_to_gpx()
         #Convert FIT to GPX
         strava_conv.strava_fit_to_gpx() 
 
@@ -123,7 +123,7 @@ class Strava_plotting:
         plt.suptitle(title,fontsize = 50,x = 0.5 ,y =0.94,color =color0 ,**font)
         if save == True:
             plt.savefig(DIR_STRAVA+"/pig_matrix.svg",format = "svg",bbox_inches = 'tight')
-            plt.savefig(DIR_STRAVA+"/pig_matrix.png",format = "png",dpi = 500,bbox_inches = 'tight')
+            plt.savefig(DIR_STRAVA+"/pig_matrix.png",format = "png",dpi = 300,bbox_inches = 'tight',transparent = False)
         plt.show()
     
     def plot_area(self,plot_center =[55.66597639, 12.54277727] ,plot_width_km = 14,title = "Copenhagen",save = False): 
@@ -168,7 +168,7 @@ class Strava_plotting:
         plt.ylim([ymin,ymax])
         if save == True:
             plt.savefig(DIR_STRAVA+"/pig_area.svg",format = "svg",bbox_inches='tight')
-            plt.savefig(DIR_STRAVA+"/pig_area.png",format = "png",dpi = 500,bbox_inches='tight')
+            plt.savefig(DIR_STRAVA+"/pig_area.png",format = "png",dpi = 300,bbox_inches='tight',transparent = False)
         plt.show()
                     
     
