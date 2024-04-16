@@ -3,3 +3,4 @@ export_20231220/
 rebuild.command
 STRAVAv/
 .DS_Store
+__pycache__/
